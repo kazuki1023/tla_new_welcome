@@ -413,6 +413,7 @@ nav ul li.has-child.active::before{
   left: 20px;
 }
 
+
 /*ボタン内側*/
 
 .g-nav-openbtn .openbtn-area{
@@ -815,7 +816,6 @@ padding:0 15px;/*ギャラリー左右に余白をつける*/
 	position: absolute;
 	top:10px;
 	right:10px;
-	background:url("../img/icon_search.svg") no-repeat 15px center;/*虫眼鏡アイコンを背景に表示*/
 	background-size: 20px 20px;
 	width:50px;
 	height:50px;
@@ -828,9 +828,9 @@ padding:0 15px;/*ギャラリー左右に余白をつける*/
 /*==検索窓背景のエリア*/
 
 #search-wrap{
-    position:fixed;/*固定配置にして*/
-	top: 0;
-    left: 0;
+  position:fixed;/*固定配置にして*/
+	top: 50px;
+  left: 0;
 	z-index: -1;/*最背面に設定*/
 	opacity: 0;/*透過を0に*/
 	transition: all 0.4s;/*transitionを使ってスムースに現れる*/
@@ -896,7 +896,6 @@ padding:0 15px;/*ギャラリー左右に余白をつける*/
 	position: absolute;
 	 top:0;
 	right:10px;
-	background:url("../img/icon_search.svg") no-repeat 15px center;/*虫眼鏡アイコンを背景に表示*/
 	background-size: 25px 25px;
 	width:60px;
 	height: 60px;
