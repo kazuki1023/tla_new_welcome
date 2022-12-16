@@ -458,8 +458,6 @@ body.appear #vidual-area::after{
 /* contact */
 
 #contact{
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -478,7 +476,10 @@ body.appear #vidual-area::after{
 }
 
 #contact .contact-tel{
-     width:35%;
+    width:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact .contact-tel p{
@@ -501,6 +502,12 @@ body.appear #vidual-area::after{
 
 #contact .contact-tel br{
     display: none;
+}
+.contact_sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 @media screen and (max-width:690px) {
