@@ -1,0 +1,642 @@
+@charset "utf-8";
+/* レイアウトのためのCSS */
+
+body{
+    background:#000;
+    font-family: 'Noto Sans JP', sans-serif;
+	color: #eee;
+	font-size:1rem;
+	line-height:1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	word-wrap: break-word;
+}
+
+*{box-sizing: border-box;}
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #eee;
+	text-decoration: none;
+  outline: none;
+}
+.main_sns_item {
+  display: flex;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* loading ※https://projects.lukehaas.me/css-loaders/参照*/
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  animation: load1 1s infinite ease-in-out;
+  width: 0.5em;
+  height: 1em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 1em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 2em;
+  }
+}
+
+
+/* area */
+
+#container{
+    overflow-x: hidden;
+    /*以下、IE11用*/
+    z-index: 1;
+    position: relative;
+}
+
+/* font-family */
+
+h1,
+h2,
+#service .service-area section h3,
+#g-nav,
+#footer-link,
+.scrolldown1 span,
+#vidual-area dt,
+.footer-logo{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+/* heading */
+
+h2{
+    font-size: 2rem;
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+}
+
+/* header */
+
+#header h1 a{
+    color: #ddd;
+}
+
+#header h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 0 0 0 2%; 
+    line-height: 1;
+    white-space: nowrap;
+}
+.main_sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:960px){
+  #header h1{
+    position: absolute;
+      top:22px;
+      left:20px;
+      padding: 0;
+    }
+}
+
+.scrolldown1 span {
+    transform: rotate(-90deg);
+    text-transform:uppercase;
+    left: -23px;
+    top: -31px;
+}
+
+/* vidualarea */
+#vidual-area{
+    position: relative;
+    height: 100vh;
+}
+
+body.appear #vidual-area::after{
+    content:'';
+    background:#960021;
+    width:0;
+    height: 12%;
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index: -1;
+	animation-name:vidualbgRLextendAnime;
+    animation-duration:.2s;
+	animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes vidualbgRLextendAnime{
+	0% {
+		width:0;
+	}
+	100% {
+		width:40%;
+	}
+}
+
+
+#vidual-area #slider-area{
+    position: absolute;
+    top:0;
+    right: 0;
+    width:85%;
+    z-index: -1;/*最背面へ*/
+}
+
+#vidual-area h2{
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-size: 3vw;
+    position: absolute;
+    top:36%;
+    left:5%;
+    color: rgb(200, 198, 198);
+}
+
+#vidual-area dl{
+    position: absolute;
+    left:2%;
+    bottom:2%;
+}
+
+#vidual-area dl{
+    color:#aaa;
+}
+
+#vidual-area dt,
+/* #vidual-area dd, */
+/* #vidual-area ul, */
+#vidual-area ul li{
+    display: inline-block;
+}
+#vidual-area dd {
+  display: flex;
+  align-items: center;
+}
+
+#vidual-area dt{
+    text-transform: uppercase;
+}
+
+#vidual-area ul li{
+    margin:0 10px;
+}
+
+#vidual-area ul img{
+    width:20px;
+}
+
+@media screen and (max-width:960px) {
+#vidual-area{
+    height: 90vh;
+}
+#vidual-area #slider-area{
+    width:100%;
+    height: 90vh;
+}
+#vidual-area h2{
+    font-size:2.1rem;
+}
+#vidual-area dl{
+    left:20px;
+    bottom:16px;
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:450px) {
+#vidual-area h2{
+    font-size:7vw;
+    top: inherit;
+    bottom: 13%;
+}
+
+}
+
+/* service */
+
+#service{
+    padding: 10% 0 10% 15%;
+}
+
+@media screen and (max-width:768px) {
+#service{
+    padding: 30% 0 10% 30px;
+}
+}
+
+@media screen and (max-width:500px) {
+    #service .service-lead{
+        padding: 0 10% 0 0;
+    }
+#service .service-lead br{
+    display: none;
+}
+}
+
+#service .service-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:10% 0 0 10%;
+    position: relative;
+}
+
+#service .service-area::after{
+    opacity: 0;
+}
+
+#service .service-area.startwd::after{
+     content:'';
+    position: absolute;
+    top:10%;
+    right:0;
+    width:80%;
+    height: 60vh;
+    background:#232323;
+    z-index: -1;
+	animation-name:sevicebgRLextendAnime;
+    animation-duration:.9s;
+	animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes sevicebgRLextendAnime{
+	0% {
+        opacity: 0;
+		width:0;
+	}
+	100% {
+        opacity: 1;
+		width:80%;
+	}
+}
+
+#service .service-area section{
+     width:30%;   
+}
+
+@media screen and (max-width:570px) {
+#service .service-area section{
+     width:100%;
+    margin: 0 0 100px 0;
+    padding: 0 10% 0 0;
+}
+ 
+}
+
+#service .service-area section h3{
+    font-size:1.5rem;
+    margin: 30px 0 30px 0;
+}
+
+#service .service-area section p{
+    margin: 0 0 30px 0;
+}
+
+#service .service-img-wrapper{
+    position:relative;
+    overflow: hidden;
+    width:30%;
+    height: 60vh;
+}
+
+#service .service-img01{
+    height: 60vh;
+    background:url("../img/summercamp/IMG_5323.jpg") no-repeat center;
+    background-size: contain;
+}
+.service-img02{
+    height: 60vh;
+    background:url("../img/summercamp/IMG_4247.jpg") no-repeat center;
+    background-size: contain;
+    width: 100%;
+}
+.summercamp {
+    padding: 10% 0 0 10%;
+}
+
+@media screen and (max-width:570px) {
+#service .service-img-wrapper,
+#service .service-img{
+    width:100%;
+    height: 40vh;
+    background-position: center;
+    }
+    #service .service-img-wrapper{
+        margin:0 0 50px 0;
+    }
+}
+
+/* news */
+
+.news-img-wrapper{
+    position:relative;
+    z-index: 1;
+    overflow: hidden;
+    width:90%;
+    height: 60vh;
+}
+
+.news-img{
+    height: 60vh;
+    background:url("../img/summercamp/IMG_5398.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.news-img::after{
+     content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:70%;
+    height: 10vh;
+    background:#000;
+    z-index:2;
+}
+
+#news{
+    padding: 0 0 5% 15%;
+}
+
+#news .area li{
+    padding: 20px 0;
+}
+
+#news .area time{
+    display: block;
+    color: #aaa;
+}
+
+#news .tab{
+    position: relative;
+    top:1px;
+}
+
+#news .tab-choice-area{
+    border-top:1px solid #aaa;
+    border-left:1px solid #aaa;
+}
+
+@media only screen and (max-width: 1110px) {
+    .tab-area{
+        width:100%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+#news {
+    padding: 0 0 5% 30px;
+}
+}
+
+/* gallery */
+
+#gallery{
+    margin: 0 0 5% 0;
+}
+
+#gallery li{
+    overflow: hidden;
+}
+
+.gallery img{
+    opacity: 0.5;
+}
+
+.gallery img:hover{
+    opacity: 1;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact .contact-detail{
+    width:65%;
+    border-right: 1px solid #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact .contact-detail h2{
+     margin:0 0 5px 0;   
+    font-size: 1.5rem;
+}
+
+#contact .contact-tel{
+    width:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact-tel p{
+    text-align: center;
+}
+
+#contact .contact-tel p a{
+     display: block;  
+    padding: 20px;
+    transition: all .3s;
+}
+
+#contact .contact-tel p a:hover{
+     background:rgba(255,255,255,0.2);   
+}
+
+#contact .contact-tel p:last-child{
+    border-top:1px solid #aaa;
+}
+
+#contact .contact-tel br{
+    display: none;
+}
+.contact_sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media screen and (max-width:690px) {
+#contact .contact-detail,
+#contact .contact-tel{
+    width:50%;
+}
+    
+#contact .contact-tel br{
+    display: block;
+}
+#contact .contact-detail h2{
+    font-size: 1.2rem;
+}
+#contact .contact-detail p{
+    text-align: left;
+}
+}
+
+@media screen and (max-width:400px) {
+    #contact{
+        font-size: 0.8rem;
+    }
+}
+/* footer */
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.8;
+    padding:5%;
+}
+
+#footer .footer-info{
+    width:30%;
+}
+
+#footer .footer-info .footer-logo{
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+#footer .footer-info address{
+    font-style: normal;
+    margin: 0 0 10px 0;
+}
+
+#footer .footer-info ul li{
+    margin: 0 0 10px 0;
+}
+
+#footer .footer-info dl dt,
+#footer .footer-info dl dd{
+    display: inline-block;
+}
+
+#footer .footer-info dl dt::after{
+    content:':';
+    padding: 0 10px;
+}
+
+
+#footer .footer-link{
+    width:65%;
+}
+
+#footer .footer-link ul{
+     display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+}
+
+#footer .footer-link ul li{
+    margin: 0 20px;
+}
+
+#footer .footer-link ul ul li{
+    margin:0 10px 0 0;
+}
+
+#footer small{
+    padding: 100px 0 0 0;
+    display: block;
+    text-align: right;
+    color: #aaa;
+}
+#footer .footer-link ul ul{
+     display: block;
+}
+
+@media screen and (max-width:830px) {
+    #footer{
+        justify-content: center;
+        padding:5% 0;
+    }
+    #footer .footer-info{
+        width:100%;
+        padding: 0 0 5% 0;
+        margin: 0 0 5% 0;
+        text-align: center;
+        border-bottom: 1px solid #aaa;
+    }
+    #footer .footer-info li:nth-of-type(2) dt::after{
+        content:'';
+        padding: 0;
+    }
+    #footer .footer-info li:nth-of-type(2) dd{
+        display: block;
+    }
+    
+    #footer .footer-link{
+        width:auto;
+    }
+
+    #footer .footer-link ul {
+    justify-content: center;
+    }
+    
+    #footer small {
+        padding:10% 0;
+        text-align:center;
+    } 
+}
+
+@media screen and (max-width:400px) {
+    #footer .footer-link ul li{
+        margin: 0 10px;
+}
+}
