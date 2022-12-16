@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP%7COswald&display=swap" rel="stylesheet">
   <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
   <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.  css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
   <!--機能編 6-2-1 複数の画像を一覧で見せる-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
   <!--自作のCSS-->
@@ -20,7 +20,7 @@
 <body>
   <header id="header">
     <div class="header_logo">
-      <img src="./img/logo/IMG_1375 2.jpg" alt=""   class="header_logo_img">
+      <img src="./img/logo/IMG_1375.jpg" alt=""   class="header_logo_img">
     </div>
     <div class="g-nav-openbtn">
       <div class="openbtn-area">
@@ -55,6 +55,259 @@
       </nav>
     <div class="open-btn"></div>
   </header>
-  <main></main>
-</body>
+  <div id="search-wrap">
+    <div class="close-btn"><span></span><span></span></div>
+    <div class="search-area">
+    <form role="search" method="get" action="">
+    <input type="text" value="" name="" id="search-text" placeholder="search">
+    <input type="submit" id="searchsubmit" value="">
+    </form>
+    <!--/search-area--></div>
+    <!--/search-wrap--></div>
+    
+    <section id="vidual-area">
+    
+    <div id="slider-area" class="bgextend bgRLextendTrigger">
+        <div class="bgappearTrigger">
+            <div id="slider"></div>
+        </div>
+    <!--/slider-area--></div>
+    <h2>
+      <span class="js_typing">Tennis</span>
+      <br>
+      <span class="js_typing">Lovers</span>
+      <br>
+      <span class="js_typing">Association</span>
+    </h2>
+    <dl>
+        <dt>Follow Us</dt>
+        <dd><ul class="main_sns">
+            <li><a href="https://instagram.com/keio_tla_2022?igshid=YmMyMTA2M2Y=" class="main_sns_item" target="_blank"><img src="./img/logo/icon-instagram.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/keio_tla_2022_?s=21&t=wRnOSeKC4hdJxhIjLr_weA" class="main_sns_item" target="_blank"><img src="./img/logo/icon-twitter.svg" alt=""></a></li>
+            </ul>
+        </dd>
+    </dl>
+    <div class="scrolldown1"><span>Scroll</span></div>
+    <!--/vidual-area--></section>
+
+    <main id="main-area">
+      <section id="news">
+        <h2 class="js_typing">News</h2>
+        <div class="tab-area bgextend bgLRextendTrigger">
+          <div class="bgappearTrigger">
+            <ul class="tab">
+              <li class="active"><a href="#topics">新歓</a></li>
+              <li><a href="#parts">イベント</a></li>
+              <li><a href="#cars">その他</a></li>
+            </ul>
+            <div class="tab-choice-area">
+              <div id="topics" class="area is-active">
+                <ul>
+                  <li>
+                    <a href=""><time datetime="2022-12-17">2022.12.17</time>改選を実施しました！
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""><time datetime="2022-11-27">2022.11.27</time>ミックスダブルス開催
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><time datetime="2022-10-09">202210.09</time>球技大会開幕
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="parts" class="area">
+                <ul>
+                  <li>
+                    <a href=""><time datetime="2022-12-17">20212.17</time>改選を実施しました！
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""><time datetime="2022-11-27">20211.27</time>ミックスダブルス開催
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><time datetime="2022-10-09">20210.09</time>球技大会開幕
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="cars" class="area">
+                <ul>
+                  <li>
+                    <a href=""><time datetime="2022-12-17">20212.17</time>改選を実施しました！
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""><time datetime="2022-11-27">20211.27</time>ミックスダブルス開催
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><time datetime="2022-10-09">20210.09</time>球技大会開幕
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service">
+        <h2 class="js_typing">text</h2>
+        <p class="service-lead"><span class="bgextend bgRLextendTrigger"><span class="bgappearTrigger">テキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト</span></span></p>
+        <div class="service-area">
+          <section class="bgextend bgLRextendTrigger">
+            <div class="bgappearTrigger">
+              <header>
+                <h3>text text text</h3>
+                <p>テキストテキストテキストテキスト</p>
+              </header>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <a href="#" class="btnlinestretches2">text</a>
+            </div>
+          </section>
+          <section class="bgextend bgLRextendTrigger">
+            <div class="bgappearTrigger">
+              <header>
+                <h3>texttext &amp; texttext</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </header>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <a href="#" class="btnlinestretches2">text</a>
+            </div>
+          </section>
+          <div class="service-img-wrapper bgextend bgLRextendTrigger">
+            <div class="bgappearTrigger">
+              <div class="service-img01"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="news-img-wrapper bgextend bgRLextendTrigger">
+        <div class="bgappearTrigger">
+          <div class="news-img"></div>
+        </div>
+      </div>
+      <div class="service-img-wrapper bgextend bgLRextendTrigger summercamp">
+        <div class="bgappearTrigger">
+          <div class="service-img02"></div>
+        </div>
+      </div>
+      <ul id="gallery" class="gallery">
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="./img/plan/IMG_0691.jpg" data-lightbox="gallery-group" data-title="2022.11. 球技大会開幕！！！">
+              <img src="./img/plan/IMG_0691.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_02_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_02.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_03_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_03.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_04_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_04.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_05_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_05.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="./img/eat_plan/IMG_5634.jpg" data-lightbox="gallery-group" data-title="2022.7 最終練アフター">
+              <img src="./img/eat_plan/IMG_5634.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_07_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_07.jpg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="bgextend bgLRextendTrigger zoomInRotate">
+          <div class="bgappearTrigger">
+            <a href="img/gal_08_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！">
+              <img src="img/gal_08.jpg" alt="">
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="bgextend bgLRextendTrigger">
+        <div class="bgappearTrigger">
+          <section id="contact">
+            <div class="contact-detail">
+              <h2>Contact</h2>
+              <p>お電話・メールにてお気軽にお問い合わせください。</p>
+            </div>
+            <div class="contact-tel">
+              <p>
+                <a href="tel:03-1234-5678">Tel:03-1234-5678</a>
+              </p>
+              <p>
+                <a href="#">お問い合わせ<br>フォーム</a>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    
+    <footer id="footer">
+        <div class="footer-info">
+        <p class="footer-logo">Car King</p>
+        <address>〒111-111 東京都中央区 1-1-1</address>
+        <ul>
+            <li><dl><dt>TEL</dt><dd><a href="tel:03-1234-5678">03-1234-5678</a></dd></dl></li>
+            <li><dl><dt>営業時間</dt><dd>平日 9:30～18:00</dd><dd>土・日・祝日 10:30～19：00</dd></dl></li>
+        </ul>
+        </div>
+        
+        <div class="footer-link">
+            <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="#">Auto Parts</a></li>
+          <li><a href="#">Auto Sales</a></li>
+                <li><a href="#">Auto Repair</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Contact</a></li>
+        </ul>
+            <small>Copyright &copy; carking All rights Reserved.</small>
+        </div>    
+      <p id="page-top" class="hide-btn"><a href="#"><span></span></a></p>
+    </footer>
+    
+    <!--/container--></div>
+    
+    <!--=============JS ===============--> 
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <!--機能編 6-2-1 複数の画像を一覧で見せる-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <!--印象編　8-6 アルファベットがランダムに変化して出現-->
+    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/script.js"></script>
+    </body>
 </html>
