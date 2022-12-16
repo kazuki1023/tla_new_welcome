@@ -154,15 +154,15 @@ $('.tab a').on('click', function() {
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/summercamp/IMG_6480.jpg'},
+				{ src: './img/summercamp/IMG_0500.jpg'},
 				{ src: './img/summercamp/IMG_0824.jpg'},
-				{ src: './img/summercamp/IMG_0500.jpg'}
+				{ src: './img/logo/IMG_2305.jpg'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-      { src: './img/summercamp/IMG_6480.jpg'},
+      { src: './img/summercamp/IMG_0500.jpg'},
       { src: './img/summercamp/IMG_0824.jpg'},
-      { src: './img/summercamp/IMG_0500.jpg'}
+      { src: './img/logo/IMG_2305.jpg'}
 			];
 		}
 
