@@ -359,6 +359,16 @@ body.appear #vidual-area::after{
     background:url("") no-repeat center;
     background-size: contain;
 }
+#service .service-img-propotion{
+    height: 60vh;
+    background:url("") no-repeat center;
+    background-size: contain;
+}
+#service .service-img-appeal{
+    height: 60vh;
+    background:url("") no-repeat center;
+    background-size: contain;
+}
 
 #service .service-img01{
     height: 60vh;
