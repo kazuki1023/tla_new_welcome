@@ -356,7 +356,7 @@ body.appear #vidual-area::after{
 
 #service .service-img-practice{
     height: 60vh;
-    background:url("") no-repeat center;
+    background:url("../img/practice/LINE_ALBUM_230103_12.jpg") no-repeat center;
     background-size: contain;
 }
 #service .service-img-propotion{
@@ -366,7 +366,7 @@ body.appear #vidual-area::after{
 }
 #service .service-img-appeal{
     height: 60vh;
-    background:url("") no-repeat center;
+    background:url("../img/summercamp/IMG_4247.jpg") no-repeat center;
     background-size: contain;
 }
 
