@@ -12,6 +12,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
   <!--機能編 6-2-1 複数の画像を一覧で見せる-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+  <!-- 人数比、学部比のグラフ作成の外部ライブラリ -->
+  <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+  <!-- 実際のグラフ -->
+  <script src="./js/sex_chart.js" defer></script>
+  <script src="./js/faculty_chart.js" defer></script>
   <!--自作のCSS-->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/parts.css">
@@ -35,20 +40,20 @@
             <li>
               <a href="#">Top</a>
             </li>
-            <li  class="has-child">
-              <a href="#">tla</a>
+            <li >
+              <a href="#news_guide">News</a>
             </li>
             <li>
-              <a href="#">活動内容</a>
+              <a href="#service">練習頻度 &#47; 練習場所</a>
             </li>
             <li>
-              <a href="#">人数</a>
+              <a href="#ratio_guide">男女比 &amp; 学部比</a>
             </li>
             <li>
-              <a href="#">合宿</a>
+              <a href="#appeal_guide">TLAの魅了</a>
             </li>
             <li>
-              <a href="#">企画</a>
+              <a href="#event_guide">イベント</a>
             </li>
           </ul>
         </div>
@@ -87,7 +92,7 @@
             </ul>
         </dd>
     </dl>
-    <div class="scrolldown1"><span>Scroll</span></div>
+    <div class="scrolldown1"><span id="news_guide">Scroll</span></div>
     <!--/vidual-area--></section>
 
     <main id="main-area">
@@ -154,29 +159,71 @@
         </div>
       </section>
       <section id="service">
-        <h2 class="js_typing">text</h2>
-        <p class="service-lead"><span class="bgextend bgRLextendTrigger"><span class="bgappearTrigger">テキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト</span></span></p>
+        <h2 class="js_typing">慶応公認サークルTLA</h2>
+        <p class="service-lead">
+          <span class="bgextend bgRLextendTrigger">
+            <span class="bgappearTrigger">TLAは今年で設立64年目の歴史あるサークル
+            </span>
+          </span>
+        </p>
         <div class="service-area">
           <section class="bgextend bgLRextendTrigger">
             <div class="bgappearTrigger">
               <header>
-                <h3>text text text</h3>
-                <p>テキストテキストテキストテキスト</p>
+                <h3 class="js_typing">練習頻度 &#47; 練習場所</h3>
+                <h4 class="js_typing">練習頻度</h4>
+                <p>月曜 &#126; 金曜の週５で活動中</p>
+                <p>いつでも参加できるから、自分の予定に合わせて練習できる</p>
               </header>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <a href="#" class="btnlinestretches2">text</a>
+                <h4 class="js_typing">練習場所</h4>
+                <p>練習は多摩川のコート</p>
+                <p>日吉駅から5分</p>
+                <p>日吉・三田から乗換なし</p>
+                <a href="#contact" class="btnlinestretches2">DM</a>
             </div>
+            <div class="service-img-wrapper bgextend bgLRextendTrigger">
+              <div class="bgappearTrigger">
+                <div class=" service-img-practice"></div>
+              </div>
+            </div>
+            <span id="ratio_guide"></span>
           </section>
           <section class="bgextend bgLRextendTrigger">
             <div class="bgappearTrigger">
               <header>
-                <h3>texttext &amp; texttext</h3>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <h3 class="js_typing">男女比 &amp; 学部比</h3>
+                <p>現在約140人が在籍中</p>
               </header>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-              <a href="#" class="btnlinestretches2">text</a>
+              <a href="#" class="btnlinestretches2">DM</a>
+            </div>
+            <div class="ratio_chart">
+              <div class="sex_chart"></div>
+              <div class="faculty_chart"></div>
+            </div>
+            <div class="service-img-wrapper bgextend bgLRextendTrigger">
+              <div class="bgappearTrigger">
+                <div class="service-img01 service-img-propotion"></div>
+              </div>
+            </div>
+            <span id="appeal_guide"></span>
+          </section>
+          <section class="bgextend bgLRextendTrigger">
+            <div class="bgappearTrigger">
+              <header>
+                <h3 class="js_typing">TLAの魅了</h3>
+                <p>全体での飲み会なし &times;</p>
+                <p>テニサー部費最安値</p>
+                <p>初心者大歓迎</p>
+              </header>
+                <a href="#" class="btnlinestretches2">DM</a>
+            </div>
+            <div class="service-img-wrapper bgextend bgLRextendTrigger">
+              <div class="bgappearTrigger">
+                <div class="service-img-appeal"></div>
+              </div>
             </div>
           </section>
+          <h3 class="js_typing">夏合宿</h3>
           <div class="service-img-wrapper bgextend bgLRextendTrigger">
             <div class="bgappearTrigger">
               <div class="service-img01"></div>
@@ -193,7 +240,9 @@
         <div class="bgappearTrigger">
           <div class="service-img02"></div>
         </div>
+        <span id="event_guide"></span>
       </div>
+      <h3 class="js_typing event_title">イベント</h3>
       <ul id="gallery" class="gallery">
         <li class="bgextend bgLRextendTrigger zoomInRotate">
           <div class="bgappearTrigger">
@@ -239,8 +288,8 @@
         </li>
         <li class="bgextend bgLRextendTrigger zoomInRotate">
           <div class="bgappearTrigger">
-            <a href="./img/summercamp/IMG_6480.jpg" data-lightbox="gallery-group" data-title="2022.08 夏合宿！">
-              <img src="./img/summercamp/IMG_6480.jpg" alt="">
+            <a href="./img/summercamp/IMG_2097.jpg" data-lightbox="gallery-group" data-title="2022.08 夏合宿、サークル対抗！">
+              <img src="./img/summercamp/IMG_2097.jpg" alt="">
             </a>
           </div>
         </li>
@@ -257,7 +306,7 @@
           <section id="contact">
             <div class="contact-detail">
               <h2>Contact</h2>
-              <p>insta,twitterのDMにて気軽にお問い合わせください</p>
+              <p>instagram,twitterのDMにて気軽にお問い合わせください</p>
             </div>
             <div class="contact-tel">
               <ul class="contact_sns">
@@ -283,11 +332,11 @@
         <div class="footer-link">
           <ul>
             <li><a href="#">Top</a></li>
-            <li><a href="#">TLA</a></li>
-            <li><a href="#">活動内容</a></li>
-            <li><a href="#">人数</a></li>
-            <li><a href="#">合宿</a></li>
-            <li><a href="#">イベント</a></li>
+            <li><a href="#news_guide">News</a></li>
+            <li><a href="#service">practice</a></li>
+            <li><a href="#ratio_guide">ratio</a></li>
+            <li><a href="#appeal_guide">魅力</a></li>
+            <li><a href="#event_guide">イベント</a></li>
           </ul>
           <small>Copyright &copy; TLA.</small>
         </div>
@@ -301,7 +350,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
     <!--機能編 6-2-1 複数の画像を一覧で見せる-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-    <!--印象編　8-6 アルファベットがランダムに変化して出現-->
+    <!--印象編 8-6 アルファベットがランダムに変化して出現-->
     <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
     <!--自作のJS-->
     <script src="js/script.js"></script>
