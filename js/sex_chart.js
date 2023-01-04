@@ -4,7 +4,7 @@
   var options = {
     series: [59, 41],
     chart: {
-    width: 500,
+    width: 400,
     type: 'pie',
   },
   labels: ['male', 'female'],
