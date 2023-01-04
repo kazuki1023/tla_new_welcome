@@ -4,7 +4,7 @@
 {
   var options = {
     series: [44, 55, 41, 17, 15, 13],
-    width: 500,
+    width: 400,
     chart: {
     type: 'donut',
   },
