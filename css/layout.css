@@ -384,6 +384,10 @@ body.appear #vidual-area::after{
 .summercamp {
     padding: 10% 0 0 10%;
 }
+.event_title{
+    padding: 10% 0 0 10%;
+    margin-bottom: 8px;
+}
 
 @media screen and (max-width:570px) {
 #service .service-img-wrapper,
