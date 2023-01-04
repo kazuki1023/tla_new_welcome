@@ -3,37 +3,13 @@
 // 学部比パイチャート
 {
   var options = {
-    series: [59, 31, 22, 12, 23],
-    chart: {
+    series: [44, 55, 41, 17, 15, 13],
     width: 500,
-    type: 'pie',
+    chart: {
+    type: 'donut',
   },
-  labels: ['理工学部', '経済学部', '商学部', '文学部', '法学部', 'SFC' ],
-  colors: ['#0099FF', '#FF0099'],
-  fill: {
-    type: 'image',
-    opacity: 0.85,
-    image: {
-        src: ['./img/change_generation/LINE_ALBUM_230103_10.jpg', './img/plan/LINE_ALBUM_230104.jpg'],
-      width: 20,
-      imagedHeight: 20
-    },
-  },
-  stroke: {
-    width: 2,
-    colors: "white"
-  },
-  dataLabels: {
-    enabled: true,
-    style: {
-      colors: ['#111']
-    },
-    background: {
-      enabled: true,
-      foreColor: '#fff',
-      borderWidth: 0
-    }
-  },
+  labels: ['理工', '経済', '商', '文', '法', 'SFC'],
+  colors: ['#228EFA', '#40DE92', '#FAB01A', '#DE7A8A', '#775ED0', '#6E6E6E'],
   responsive: [{
     breakpoint: 480,
     options: {
@@ -44,13 +20,12 @@
         position: 'top',
         labels: {
           colors: "white",
-      },
+        }
       }
     }
   }]
   };
-  
-  var faculty_chart = new ApexCharts(document.querySelector(".faculty_chart"), options);
-  faculty_chart.render();
 
+  var chart = new ApexCharts(document.querySelector(".faculty_chart"), options);
+  chart.render();
 }
