@@ -12,6 +12,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
   <!--機能編 6-2-1 複数の画像を一覧で見せる-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+  <!-- 人数比、学部比のグラフ作成の外部ライブラリ -->
+  <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+  <!-- 実際のグラフ -->
+  <script src="./js/sex_chart.js" defer></script>
+  <script src="./js/faculty_chart.js" defer></script>
   <!--自作のCSS-->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/parts.css">
@@ -190,6 +195,10 @@
                 <p>現在約140人が在籍中</p>
               </header>
               <a href="#" class="btnlinestretches2">DM</a>
+            </div>
+            <div class="ratio_chart">
+              <div class="sex_chart"></div>
+              <div class="faculty_chart"></div>
             </div>
             <div class="service-img-wrapper bgextend bgLRextendTrigger">
               <div class="bgappearTrigger">
