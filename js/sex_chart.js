@@ -2,7 +2,7 @@
 // 男女比パイチャート
 {
   var options = {
-    series: [59, 41],
+    series: [55, 45],
     chart: {
     width: 400,
     type: 'pie',

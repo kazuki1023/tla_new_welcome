@@ -3,7 +3,7 @@
 // 学部比パイチャート
 {
   var options = {
-    series: [44, 55, 41, 17, 15, 13],
+    series: [14, 26, 16, 13, 30, 1],
     width: 400,
     chart: {
     type: 'donut',
