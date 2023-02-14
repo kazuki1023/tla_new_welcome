@@ -113,9 +113,14 @@ h2{
     margin: 0 0 50px 0;
     text-transform: uppercase;
 }
+#news_title {
+    margin-bottom: 10px;
+}
+#news_subtitle {
+    margin-bottom: 5px;
+}
 
 /* header */
-
 #header h1 a{
     color: #ddd;
 }
@@ -366,18 +371,29 @@ body.appear #vidual-area::after{
 }
 #service .service-img-appeal{
     height: 60vh;
-    background:url("../img/summercamp/IMG_4247.jpg") no-repeat center;
+    background:url("../img/practice/IMG_1370.JPG") no-repeat center;
     background-size: contain;
 }
 
 #service .service-img01{
     height: 60vh;
-    background:url("../img/summercamp/IMG_5323.jpg") no-repeat center;
+    background:url("../img/plan/IMG_7238.jpg") no-repeat center;
+    background-size: contain;
+}
+#service .service-img03{
+    height: 60vh;
+    background:url("../img/plan/IMG_7238.jpg") no-repeat center;
     background-size: contain;
 }
 .service-img02{
     height: 60vh;
     background:url("../img/summercamp/IMG_4247.jpg") no-repeat center;
+    background-size: contain;
+    width: 100%;
+}
+.service-img04{
+    height: 60vh;
+    background:url("../img/summercamp/IMG_5323.jpg") no-repeat center;
     background-size: contain;
     width: 100%;
 }
