@@ -29,6 +29,9 @@ a{
 .main_sns_item {
   display: flex;
 }
+.main_sns_item img {
+    width: 20px;
+}
 
 img{
     max-width: 100%;
@@ -550,7 +553,7 @@ body.appear #vidual-area::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 @media screen and (max-width:690px) {
