@@ -51,7 +51,6 @@
   
   var sex_chart = new ApexCharts(document.querySelector(".sex_chart"), options);
   sex_chart.render();
-
 }
 
 
