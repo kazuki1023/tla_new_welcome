@@ -270,13 +270,10 @@ body.appear #vidual-area::after{
 /* service */
 
 #service{
-    padding: 10% 0 10% 15%;
+    padding: 10% 0 10% 5%;
 }
 
 @media screen and (max-width:768px) {
-#service{
-    padding: 30% 0 10% 30px;
-}
 }
 
 @media screen and (max-width:500px) {
@@ -293,7 +290,6 @@ body.appear #vidual-area::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:10% 0 0 10%;
     position: relative;
 }
 
@@ -328,7 +324,7 @@ body.appear #vidual-area::after{
 }
 
 #service .service-area section{
-    width:30%;
+    width:70%;
 }
 
 @media screen and (max-width:570px) {
@@ -358,7 +354,7 @@ body.appear #vidual-area::after{
 #service .service-img-wrapper{
     position:relative;
     overflow: hidden;
-    width:30%;
+    width:60%;
     height: 60vh;
 }
 
@@ -441,7 +437,6 @@ body.appear #vidual-area::after{
     position: absolute;
     bottom:0;
     left:0;
-    width:70%;
     height: 10vh;
     background:#000;
     z-index:2;
@@ -481,6 +476,13 @@ body.appear #vidual-area::after{
 #news {
     padding: 0 0 5% 30px;
 }
+}
+
+@media screen and (min-width:768px) {
+    #service .service-area{
+        position: relative;
+        display: block;
+    }
 }
 
 /* gallery */

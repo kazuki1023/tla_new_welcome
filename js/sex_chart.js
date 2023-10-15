@@ -4,10 +4,12 @@
   var options = {
     series: [55, 45],
     chart: {
-    width: 400,
     type: 'pie',
   },
   labels: ['male', 'female'],
+  legend: {
+    position: 'bottom',
+  },
   colors: ['#0099FF', '#FF0099'],
   fill: {
     type: 'image',
@@ -37,16 +39,17 @@
     breakpoint: 480,
     options: {
       chart: {
-        width: 340
+        width: 300
       },
       legend: {
-        position: 'top',
+        position: 'bottom',
         labels: {
           colors: "white",
       },
-      }
-    }
-  }]
+      labels: {
+        width: 500,
+      }},
+  }}]
   };
   
   var sex_chart = new ApexCharts(document.querySelector(".sex_chart"), options);
