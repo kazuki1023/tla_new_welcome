@@ -9,18 +9,18 @@
     type: 'donut',
   },
   labels: ['理工', '経済', '商', '文', '法', 'SFC'],
+  legend: {
+    position: 'bottom',
+  },
   colors: ['#228EFA', '#40DE92', '#FAB01A', '#DE7A8A', '#775ED0', '#6E6E6E'],
   responsive: [{
     breakpoint: 480,
     options: {
       chart: {
-        width: 340
+        width: 300
       },
       legend: {
-        position: 'top',
-        labels: {
-          colors: "white",
-        }
+        show: true,
       }
     }
   }]

@@ -270,13 +270,10 @@ body.appear #vidual-area::after{
 /* service */
 
 #service{
-    padding: 10% 0 10% 15%;
+    padding: 10% 0 10% 5%;
 }
 
 @media screen and (max-width:768px) {
-#service{
-    padding: 30% 0 10% 30px;
-}
 }
 
 @media screen and (max-width:500px) {
