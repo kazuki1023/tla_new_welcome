@@ -786,7 +786,7 @@ nav ul li.has-child.active::before{
 機能編 6-2-1 複数の画像を一覧で見せる
 ===================================*/
 .gallery{
-columns: 4;/*段組みの数*/
+columns: 5;/*段組みの数*/
 padding:0 15px;/*ギャラリー左右に余白をつける*/
 }
 
